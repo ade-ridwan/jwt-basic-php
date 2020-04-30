@@ -15,16 +15,16 @@ Keterangan : value adalah kode token hasil generate tadi
 
 jika kode token sesuai maka akan muncul hasil json berikut :
 
-{
-    "id_user": "1",
-    "email": "sukun024@gmail.com",
-    "code": 200
-}
+    {
+        "id_user": "1",
+        "email": "sukun024@gmail.com",
+        "code": 200
+    }
 
 jika kode token tidak sesuai maka akan muncul seperti berikut :
 
-{
-    "message": "Unauthroizhed",
-    "code": 401
-}
+    {
+        "message": "Unauthroizhed",
+        "code": 401
+    }
 
