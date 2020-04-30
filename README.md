@@ -7,8 +7,10 @@ contoh hasil generate code :
 eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjoiMSIsImVtYWlsIjoic3VrdW4wMjRAZ21haWwuY29tIn0.hbPOjlo_QzvUNttFqPqbWGmRg4mL3K0hp1FgV_U7NWs
 
 Lalu ubah link menjadi cek_token.php dan tambahkan di tab header 
+
 key : 
 Authorization
+
 value :
 eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF91c2VyIjoiMSIsImVtYWlsIjoic3VrdW4wMjRAZ21haWwuY29tIn0.hbPOjlo_QzvUNttFqPqbWGmRg4mL3K0hp1FgV_U7NWs
 
