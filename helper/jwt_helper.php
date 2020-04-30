@@ -25,7 +25,7 @@ class JwtHelper {
 			//jika token tidak sesuai maka akan mengembalikan pesan berikut
 			http_response_code(401);
 			$decoded = [
-				"message" => $ex->getMessage(),
+				"message" => $ex->getMessage(), //menampilkan pesan error default
 				"code" =>  http_response_code()
 			];
 			return $decoded;
