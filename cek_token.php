@@ -1,5 +1,5 @@
 <?php
-require 'helper/jwt_helper.php';
+require('helper/jwt_helper.php');
 
 //Inisialisasi class JwtHelper
 $jwthelper = new JwtHelper;
