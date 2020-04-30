@@ -21,7 +21,7 @@ class JwtHelper {
 			return $decoded;
 		}
 		catch (Exception $ex){
-			//jika token tidak sesuai makan mengembalikan pesan berikut
+			//jika token tidak sesuai maka akan mengembalikan pesan berikut
 			http_response_code(401);
 			$decoded = [
 				"message" => "Unauthroizhed",
