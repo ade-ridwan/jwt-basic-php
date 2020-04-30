@@ -1,8 +1,13 @@
 <?php
 require 'helper/jwt_helper.php';
+
+//Inisialisasi class JwtHelper
 $jwthelper = new JwtHelper;
+
+//Menambahkan header type json
 header('Content-Type: application/json');
 
+// Cek jika header request berisi Authorization
 if(isset(apache_request_headers()["Authorization"])){
 	$headers = apache_request_headers();
 	$jwt = $headers['Authorization'];
@@ -11,6 +16,7 @@ if(isset(apache_request_headers()["Authorization"])){
 	echo json_encode($payload);
 	
 }else{
+// Jika tidak ada maka munculkan pesan berikut
 	http_response_code(401);
 	$error = [
 		"message" => "Authorization Requested !",
