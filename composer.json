@@ -1,0 +1,12 @@
+{
+    "name": "ade/api-jwt",
+    "authors": [
+        {
+            "name": "Ade Ridwan",
+            "email": "sukun024@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    }
+}
