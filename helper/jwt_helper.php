@@ -16,6 +16,7 @@ class JwtHelper {
 	public function decoded_jwt($jwt){
 		try{
 			//jika token sesuai akan mengembalikan pesan berikut
+			//JWT::$leeway = 60;
 			$decoded = JWT::decode($jwt, $this->key, array('HS256'));
 			$decoded->code = http_response_code();
 			return $decoded;
@@ -24,7 +25,7 @@ class JwtHelper {
 			//jika token tidak sesuai maka akan mengembalikan pesan berikut
 			http_response_code(401);
 			$decoded = [
-				"message" => "Unauthroizhed",
+				"message" => $ex->getMessage(),
 				"code" =>  http_response_code()
 			];
 			return $decoded;
