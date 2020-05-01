@@ -5,9 +5,6 @@ include 'account.php';
 //menginisialisasi object class JwtHelper
 $jwthelper = new JwtHelper;
 
-// Mendapatkan dan menginisialisasi body yang dikirimkan
-$body = json_decode(file_get_contents("php://input"));
-
 // Cek jika body berisikan email dan password yang sama saat token di generate.
 if ($body->email == $email and $body->password == $password) {
 
