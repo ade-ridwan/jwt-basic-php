@@ -1,10 +1,12 @@
 <?php
 require('helper/jwt_helper.php');
 include 'account.php';
+
 header('Content-Type: application/json');
 
 //menginisialisasi object class JwtHelper
 $jwthelper = new JwtHelper;
+
 
 // Mendapatkan dan menginisialisasi body yang dikirimkan
 //bisa di sesuaikan dengan data yang sobat butuhkan.
