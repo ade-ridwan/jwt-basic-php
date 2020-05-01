@@ -43,7 +43,7 @@ jika kode token tidak sesuai maka akan muncul seperti berikut :
         "code": 401
     }
 
-jika kode token sesuai namun kadaluarsa (lewat 3 hari) maka akan muncul seperti berikut :
+jika kode token sesuai namun kadaluarsa (lewat 1 menit) maka akan muncul seperti berikut :
 
     {
         "message": "Token Expired",
